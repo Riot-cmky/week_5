@@ -73,9 +73,12 @@ print(word4)
 # Check if the word "moonlight" appears in the quote: "With freedom, books, flowers, and the moon, who could not be happy? - Oscar Wilde"
 quote_two = "With freedom, books, flowers, and the moon, who could not be happy? - Oscar Wilde"
 print(quote.find("moonlight"))
+print("moonlight" in quote_two)
 
 # Length and Count:
 # a. Calculate the number of characters (including spaces and punctuation) in the word/phrase: "Supercalifragilisticexpialidocious".
 # b. Count the number of times the letter 'i' appears in the same word/phrase.
+word = "Supercalifragilisticexpialidocious"
 word1 = len("Supercalifragilisticexpialidocious")
 print(word1)
+count_i = word.count('i')
