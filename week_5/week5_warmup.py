@@ -5,7 +5,7 @@
 # b. Retrieve the second to last character.
 # c. Find the first occurrence of the letter 'c'.
 string_magic = 'abracadabra'
-print(string_magic[5])
+print(string_magic[4])
 print(string_magic[-2])
 print(string_magic.find('c'))
 
