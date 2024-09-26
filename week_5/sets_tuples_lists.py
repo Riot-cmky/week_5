@@ -89,11 +89,38 @@ cars = ["Ford", "Volvo", "BMW"]
 # # print out the list of cars in an f-string
 # print(f"The cars in the list are: + {cars}")
 
-#check if the list contains "Ford"
-for car in cars: 
-    requestCar = input("Enter a car: ")
-    cars.append(requestCar)
-    print(f"The cars in the list are: + {cars}")
-    if len(cars) == 10:
-        print("You have reached the maximun number of cars.")
+# #check if the list contains "Ford"
+# for car in cars: 
+#     requestCar = input("Enter a car: ")
+#     cars.append(requestCar)
+#     print(f"The cars in the list are: + {cars}")
+#     if len(cars) == 10:
+#         print("You have reached the maximun number of cars.")
+#         break
+
+
+# CHALLENGE
+# create a list of friends
+friends = ["Pedro"]
+# add 4 new friends in the list in the list by requesting the user to enter new names
+for friend in friends:
+    requestFriend = input(("Enter a friend: "))
+    friends.append(requestFriend)
+    if len(friends) == 4:
+        print(friends)
+        print(f"The friends in the list are: + {friends}")
         break
+# print out the list of friends in a f-string
+
+# replace the last element in the list with another friend
+friends[-1] = "Gio"
+# print out the list of friends in a f-string
+print(f"The friends in the list are: + {friends}")
+# replace the 3rd element in the list with another friend
+friends[2] = "Adrian"
+# print out the list of friends in a f-string
+print(f"The friends in the list are: + {friends}")
+# insert a new friend in the 2nd position
+friends.insert(1, "Aaliyah")
+# print out the list of friends in a f-string
+print(f"The friends in the list are: + {friends}")
