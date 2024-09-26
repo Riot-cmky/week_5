@@ -62,29 +62,38 @@ fruits = ["apple", "orange", "banana", "coconut", "tomato", "mangao", "watermelo
 
 cars = ["Ford", "Volvo", "BMW"]
 # add 4 new cars to the list
-cars.append("Bugatti")
-cars.append("Ram")
-cars.append("Dodge")
-cars.append("Mitsubishi")
-# print out the list of cars in a f-string
-# that says "The cars in the list are: "
-print(f"The cars in the list are: + {cars}")
-# replace the last element in the list with another car
-cars[-1] = "Fiat"
-# print out the list of cars in an f-string
-print(f"The cars in the list are: + {cars}")
+# cars.append("Bugatti")
+# cars.append("Ram")
+# cars.append("Dodge")
+# cars.append("Mitsubishi")
+# # # print out the list of cars in a f-string
+# # # that says "The cars in the list are: "
+# # print(f"The cars in the list are: + {cars}")
+# # # replace the last element in the list with another car
+# # cars[-1] = "Fiat"
+# # # print out the list of cars in an f-string
+# # print(f"The cars in the list are: + {cars}")
 
-# replace the 3rd elemnet in the list with another car
-cars[2] = "alfa romeo"
-# print out the list of cars in an f-strong
-print(f"The cars in the list are: + {cars}")
+# # # replace the 3rd elemnet in the list with another car
+# # cars[2] = "alfa romeo"
+# # # print out the list of cars in an f-strong
+# # print(f"The cars in the list are: + {cars}")
 
-#insert a new care in the 2nd position
-cars.insert(0,"Maserati")
-#print out the list of cars in an f-string
-print(f"The cars in the list are: + {cars}")
+# #insert a new care in the 2nd position
+# cars.insert(0,"Maserati")
+# #print out the list of cars in an f-string
+# print(f"The cars in the list are: + {cars}")
 
-#remove the 3rd element in the list
-cars.remove("Volvo")
-# print out the list of cars in an f-string
-print(f"The cars in the list are: + {cars}")
+# #remove the 3rd element in the list
+# cars.remove("Volvo")
+# # print out the list of cars in an f-string
+# print(f"The cars in the list are: + {cars}")
+
+#check if the list contains "Ford"
+for car in cars: 
+    requestCar = input("Enter a car: ")
+    cars.append(requestCar)
+    print(f"The cars in the list are: + {cars}")
+    if len(cars) == 10:
+        print("You have reached the maximun number of cars.")
+        break
