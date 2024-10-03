@@ -108,15 +108,15 @@ text_tuple = tuple(text)
 print(text_tuple)
 
 # Tuple to store the target characters
-
-
+small_v = text_tuple.count("v")
+capital_v = text_tuple.count("V")
 
 # Count occurrences of 'v' or 'V' by filtering the text_tuple
+total_v = small_v + capital_v
 
 
 
-
-# Output the result
+# Output the rprint result
 
 
 
@@ -126,26 +126,38 @@ print(text_tuple)
 # Define the dictionary
 
 
-sample_list = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
+sample_list = [[1, 2, 3], [4, 5, 6], [7, 8, 9]] #list inside a list
 # get length of the list
 print(len(sample_list)) # Output: 3
+print(sample_list[2][2]) # Output: 9
+print(sample_list[1][-1]) # Output: 6
+print(sample_list[0][-3]) # Output: 3
+print(sample_list[1][0]) # Output: 1
+print(sample_list[2][1]) # Output: 8
+# 8 is the third element in the second list
 #this is called a nested list
 # Extract and print the second element from the first list
 
 
 sample_list_of_fruit = {"fruits": ["apple", "banana", "cherry"]}
 # Extract and print the second fruit from the list
+print(sample_list_of_fruit["fruits"][1]) # Output: "banana"
+print(sample_list_of_fruit["fruits"][2]) # Output: "cherry"
 
 
 sample_list_of_lists = {"lists": [[1, 2, 3], [4, 5, 6], [7, 8, 9]]}
 # Extract and print the third element from the second list
 
-
-
+print(sample_list_of_lists['lists'][1][2]) # Output: 6
+print(sample_list_of_lists['lists'][0][1]) # Output: 3
+print(sample_list_of_lists['lists'][2][2]) # Output: 9
 
 sample_list_of_dicts = {"dicts": [{"name": "Alice", "age": 25}, {"name": "Bob", "age": 30}, {"name": "Charlie", "age": 35}]}
 # Extract and print the age of the second person
-
+print(sample_list_of_dicts["dicts"][1]["age"]) # Output: 30
+print(sample_list_of_dicts["dicts"][2]["name"]) # Output: "Charlie"
+print(sample_list_of_dicts["dicts"][0]["name"]) # Output: "Alice
+print(sample_list_of_dicts["dicts"][0]["age"]) # Output: "25"
 
 
 
@@ -159,7 +171,7 @@ data = {
 
 # Extract and print the second item from the 'tropical' list
 print(data["fruits"]["tropical"][1])  # Output: 'pineapple'
-
+print(data["prices"]["pineapple"]) # Output: 2.5
 
 
 
