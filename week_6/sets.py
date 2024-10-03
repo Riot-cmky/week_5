@@ -1,72 +1,82 @@
 
 
-# Sets##################################
-# Sets are unordered collections of unique elements
-# Sets are mutable
-# Sets are defined by curly braces {}
-#example of sets
-set1 = {1, 2, 3, 4, 5}  # set of integers
-set2 = {'apple', 'banana', 'cherry'}  # set of strings
-set3 = {1, 2, 3, 'apple', 'banana'}  # mixed set
-set4 = {1, 2, 3, 4, 5, 1, 2, 3, 4, 5}  # duplicate elements are removed
+# # Sets##################################
+# # Sets are unordered collections of unique elements
+# # Sets are mutable
+# # Sets are defined by curly braces {}
+# #example of sets
+# set1 = {1, 2, 3, 4, 5}  # set of integers
+# set2 = {'apple', 'banana', 'cherry'}  # set of strings
+# set3 = {1, 2, 3, 'apple', 'banana'}  # mixed set
+# set4 = {1, 2, 3, 4, 5, 1, 2, 3, 4, 5}  # duplicate elements are removed
 
 
-#access elements in a set
-print(1 in set1) # output:true
-print("apple" in set2) # output true
+# #access elements in a set
+# print(1 in set1) # output:true
+# print("apple" in set2) # output true
 
 
-# add elements to a set
-set1.add(6)
-print(set1) # Outputs: {1,2,3,4,5,6}
-set2.add("pineapple")
-print(set2)
-set3.add("cherry")
-print(set3)
-set4.add(7)
-print(set4)
-#remove elements from a set
+# # add elements to a set
+# set1.add(6)
+# print(set1) # Outputs: {1,2,3,4,5,6}
+# set2.add("pineapple")
+# print(set2)
+# set3.add("cherry")
+# print(set3)
+# set4.add(7)
+# print(set4)
+
+# #remove elements from a set
+# print(set1.remove(6)) # Outputs: {1,2,3,4,5}
+# print(set1)  # Outputs: {1,2,3,4,5}
+
+# #check if an element is in a set
+# print(1 in set1) # outputs:true
+
+# #find the length of a set
+# print(len(set1)) # output:5
+
+# #clear a set
+# set1.clear() # output: set()
+# print(set1)
+# set2.clear() # output: set()
+# print(set2)
+
+# #tuples##################################
+# # Tuples are ordered collections of elements
+# # Tuples are immutable
+# # Tuples are defined by parentheses ()
+# #example of tuples
+# tuple1 = (1, 2, 3, 4, 5)  # tuple of integers
+# tuple2 = ('apple', 'banana', 'cherry')  # tuple of strings
+# tuple3 = (1, 2, 3, 'apple', 'banana')  # mixed tuple
+# tuple4 = (1, 2, 3, 4, 5, 1, 2, 3, 4, 5)  # duplicate elements are allowed
 
 
-#check if an element is in a set
+# #access elements in a tuple
+# print(tuple1[0]) # Output: 1
+# print(tuple2[1]) # Output: "banana"
+# print(tuple3[3]) # Output: "apple"
 
+# #find the length of a tuple
+# print(len(tuple1)) # Output: 5
+# print(len(tuple2)) # Output: 3
 
-#find the length of a set
+# #count the number of occurrences of an element in a tuple
+# print(tuple4.count(1)) # Output: 2
+# print(tuple4.count(6)) # Output: 0
+# print(tuple3.count("apple")) # Output: 1
 
+# #find the index of an element in a tuple
+# print(tuple1.index(3)) # Output: 2
+# print(tuple2.index("cherry")) # Output:2
+# print(tuple3.index("banana")) # Output:4
 
-#clear a set
+# #convert a tuple to a list
+# print(list(tuple1)) # Output: [1,2,3,4,5])
 
-
-
-
-#tuples##################################
-# Tuples are ordered collections of elements
-# Tuples are immutable
-# Tuples are defined by parentheses ()
-#example of tuples
-tuple1 = (1, 2, 3, 4, 5)  # tuple of integers
-tuple2 = ('apple', 'banana', 'cherry')  # tuple of strings
-tuple3 = (1, 2, 3, 'apple', 'banana')  # mixed tuple
-tuple4 = (1, 2, 3, 4, 5, 1, 2, 3, 4, 5)  # duplicate elements are allowed
-
-
-#access elements in a tuple
-
-
-#find the length of a tuple
-
-
-#count the number of occurrences of an element in a tuple
-
-
-#find the index of an element in a tuple
-
-
-#convert a tuple to a list
-
-
-#convert a list to a tuple
-
+# #convert a list to a tuple
+# print(tuple(list(tuple1))) # Output: (1,2,3,4,5)
 
 
 
@@ -94,14 +104,10 @@ and you may call me V."""
 
 
 # Convert the text to a tuple of characters
-
-
-
+text_tuple = tuple(text)
+print(text_tuple)
 
 # Tuple to store the target characters
-
-
-
 
 
 
