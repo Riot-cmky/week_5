@@ -143,11 +143,10 @@ for characters in horror_characters:
         
 favorite_monster = ["Xenomorph", "Predator", "Shinigami", "The Thing", "Death"]
 
-for monster in favorite_monster:
-    if monster == "The Thing":
-        favorite_monster.replace['The Thing',"Venom"]
+for i in range(len(favorite_monster)):
+    if favorite_monster[i] == "The Thing":
+        favorite_monster[i] = "Venom"  # Replacing "The Thing" with "Venom"
     else:
-        print(monster)
-
+        print(favorite_monster[i])  # Printing the other monsters
 
 
